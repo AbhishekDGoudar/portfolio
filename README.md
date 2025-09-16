@@ -1,12 +1,32 @@
-# React + Vite
+# 🚀 Abhishek Goudar – Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal **Portfolio Website**, built with **React + Vite** and styled using **Tailwind CSS**.  
+It showcases my **projects, experience, and education**, and serves as a central place to connect with me.
 
-Currently, two official plugins are available:
+🌐 **Live Site:** [abhishekdgoudar.github.io](https://abhishekdgoudar.github.io)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔧 Tech Stack
+- ⚛️ React (with Vite for blazing-fast builds & HMR)
+- 🎨 Tailwind CSS for modern, responsive styling
+- 🛠️ ESLint for clean and consistent code
+- 📦 Deployed on GitHub Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Features
+- Responsive **Navbar** with GitHub and LinkedIn links  
+- Sections for **Home, Projects, Experience, and Education**  
+- Smooth animations with `RevealOnScroll`  
+- Timeline-style **Experience tree**  
+- Easy deployment to GitHub Pages  
+
+---
+
+## 🚀 Getting Started
+
+Clone the repo:
+```bash
+git clone https://github.com/abhishekdgoudar/portfolio.git
+cd portfolio
