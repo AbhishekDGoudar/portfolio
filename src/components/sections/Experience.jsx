@@ -1,38 +1,21 @@
 import React from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 
-// logos
 import utaLogo from "@/assets/logo/University_of_Texas_at_Arlington.png";
 import voiroLogo from "@/assets/logo/voiro_logo.svg";
 import travelderLogo from "@/assets/logo/assystant_logo.svg";
 import csirNalLogo from "@/assets/logo/CSIR_nal_logo.png";
 
 const ExperienceCard = ({ logo, alt, company, roles, stack, respSummary, points }) => {
-  const techs = Array.isArray(stack)
-    ? stack
-    : String(stack).split(",").map((s) => s.trim()).filter(Boolean);
+  const techs = Array.isArray(stack) ? stack : String(stack).split(",").map(s => s.trim()).filter(Boolean);
 
   return (
-    <div
-      className="
-        p-5 sm:p-6 rounded-xl border border-black bg-[#f5f5dc]
-        hover:-translate-y-1 hover:shadow-[0_2px_12px_rgba(0,0,0,0.25)]
-        transition-all text-center
-      "
-    >
-      {/* Logo */}
-      <img
-        src={logo}
-        alt={alt}
-        className="w-20 h-20 sm:w-[7em] sm:h-[7em] object-contain mx-auto mb-3"
-      />
-
-      {/* Company */}
+    <div className="p-5 sm:p-6 rounded-xl border border-black bg-[#f5f5dc] hover:-translate-y-1 hover:shadow-[0_2px_12px_rgba(0,0,0,0.25)] transition-all text-center">
+      <img src={logo} alt={alt} className="w-20 h-20 sm:w-[7em] sm:h-[7em] object-contain mx-auto mb-3" />
       <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900">{company}</h3>
 
-      {/* Roles */}
       <div className="text-gray-800 text-sm">
-        {roles.map((r) => (
+        {roles.map(r => (
           <div key={`${r.title}-${r.tenure}`} className="mb-2">
             <p className="font-medium">{r.title}</p>
             <p>Tenure: {r.tenure}</p>
@@ -40,39 +23,30 @@ const ExperienceCard = ({ logo, alt, company, roles, stack, respSummary, points 
         ))}
       </div>
 
-      {/* Stack badges */}
       <div className="flex flex-wrap gap-2 my-4 justify-center">
         {techs.map((tech, idx) => (
           <span
             key={idx}
-            className="
-              bg-gradient-to-r from-blue-500/10 to-cyan-400/10 text-blue-700
-              py-1 px-3 rounded-full text-sm
-              transition hover:bg-blue-200/40 hover:-translate-y-0.5
-              hover:shadow-[0_2px_8px_rgba(0,0,0,0.25)]
-            "
+            className="bg-gradient-to-r from-blue-500/10 to-cyan-400/10 text-blue-700 py-1 px-3 rounded-full text-sm transition hover:bg-blue-200/40 hover:-translate-y-0.5 hover:shadow-[0_2px_8px_rgba(0,0,0,0.25)]"
           >
             {tech}
           </span>
         ))}
       </div>
 
-      {/* Summary */}
       <p className="text-gray-800 text-sm">
         <span className="font-semibold">Responsibilities:</span> {respSummary}
       </p>
 
-      {/* Details */}
       <div className="mt-4 text-gray-700 text-sm text-left max-w-2xl mx-auto">
         <ul className="list-disc pl-5 space-y-2">
-          {points.map((p, i) => (
-            <li key={i}>{p}</li>
-          ))}
+          {points.map((p, i) => (<li key={i}>{p}</li>))}
         </ul>
       </div>
     </div>
   );
 };
+
 
 export const Experience = () => {
   const experiences = [
