@@ -1,4 +1,10 @@
+import React from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
+
+// ✅ Import images (Vite/React way)
+// import profilePic from "@/assets/images/Abhishek_Goudar.jpg";
+import utaLogo from "@/assets/logo/University_of_Texas_at_Arlington.png";
+import cmritLogo from "@/assets//logo/CMRIT_logo.png";
 
 export const Education = () => {
     return (
@@ -8,18 +14,16 @@ export const Education = () => {
         >
             <RevealOnScroll>
                 <div className="max-w-6xl w-full">
-                    {/* Gradient heading to match theme */}
                     <h3 className="text-center text-3xl md:text-4xl font-bold mb-12 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
                         Education
                     </h3>
 
-                    {/* Education Cards (beige + black border, same as projects/experience) */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {/* UTA */}
                         <div className="p-6 rounded-xl border border-black bg-[#f5f5dc] hover:-translate-y-1 hover:shadow-[0_2px_12px_rgba(0,0,0,0.25)] transition-all text-center">
                             <div className="flex justify-center mb-4">
                                 <img
-                                    src="/src/assets/logo/University_of_Texas_at_Arlington.png"
+                                    src={utaLogo}
                                     alt="University of Texas at Arlington"
                                     className="w-28 h-24 object-contain"
                                 />
@@ -45,7 +49,7 @@ export const Education = () => {
                         <div className="p-6 rounded-xl border border-black bg-[#f5f5dc] hover:-translate-y-1 hover:shadow-[0_2px_12px_rgba(0,0,0,0.25)] transition-all text-center">
                             <div className="flex justify-center mb-4">
                                 <img
-                                    src="/src/assets/logo/CMRIT_logo.png"
+                                    src={cmritLogo}
                                     alt="CMRIT"
                                     className="w-28 h-24 object-contain"
                                 />
@@ -71,3 +75,5 @@ export const Education = () => {
         </section>
     );
 };
+
+export default Education;

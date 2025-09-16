@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import profilePic from "@/assets/images/Abhishek_Goudar.jpg";
 
 export const Home = () => {
 
@@ -15,8 +16,10 @@ export const Home = () => {
             <RevealOnScroll>
                 <div className="text-center z-10 px-4 flex flex-col items-center">
                     {/* Profile Picture */}
+
+
                     <img
-                        src="/src/assets/images/Abhishek_Goudar.jpg"
+                        src={profilePic}
                         alt="Abhishek Goudar"
                         className="w-48 h-48 rounded-full mx-auto mb-6 shadow-lg object-cover border-4 border-blue-400"
                     />
@@ -29,7 +32,7 @@ export const Home = () => {
 
                     {/* Phonetic Guide */}
                     <p className="text-sm text-gray-600 italic mb-8">
-                        Pronounced as: <b>Ah-bish-shek</b>  
+                        Pronounced as: <b>Ah-bish-shek</b>
                         <button
                             onClick={playAudio}
                             className="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition"
