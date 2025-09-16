@@ -87,9 +87,9 @@ export const Experience = () => {
       respSummary: "Research and applied machine learning in knowledge graphs and query systems.",
       points: [
         "Co-author of “A Knowledge Graph Informing Soil Carbon Modeling” (ICWE 2025); designed ontologies and developed supporting web tools.",
-        "Enhanced edge recommendation in Orion, a visual query builder, by fine-tuning and integrating LLMs (Phi-4, LLaMA 3.2, Qwen).",
-        "Built a model evaluation framework on MLflow with standardized metrics for 200+ models.",
-        "Saved 10+ hours/week by automating real-time data extraction and inference triggers.",
+        "Enhanced edge recommendation in Orion, a visual query builder, by fine-tuning and integrating LLMs (Phi-4, LLaMA 3.2, Qwen) to improve query formulation.",
+        "Built a model evaluation framework on MLflow, integrating standardized metrics (accuracy, F1-score, AUC) and experiment tracking for 200+ models; improved reproducibility, cross-team visibility, and accelerated model comparisons across pipelines.",
+        "Saved 10+ hours/week by automating triggers for real-time data extraction and inference, and developed a platform that unified project assets to improve experimentation efficiency.",
       ],
     },
     {
@@ -102,13 +102,13 @@ export const Experience = () => {
       stack: ["Python", "Django", "Angular", "PostgreSQL", "Redis", "Kafka", "AWS", "Terraform"],
       respSummary: "Led full-stack development, system architecture, and high-scale revenue systems.",
       points: [
-        "Designed and developed a revenue reconciliation engine for OTT clients (Disney+ Hotstar, DStv), scaling to 100K+ ad line items/day.",
-        "Built recommendation systems optimizing ad inventory and boosting fill rates by 15%.",
-        "Containerized and orchestrated microservices with Docker, reducing deployment time and failures by 20%.",
-        "Improved data retrieval speed by 17% via caching layers (Redis) and async messaging.",
-        "Developed a cross-platform notification system with FCM, handling 30K+ push notifications/day.",
-        "Managed AWS deployments and optimized Athena queries for reporting pipelines.",
-        "Mentored 4+ engineers, improving delivery velocity by 10%.",
+        " Led design and development of a revenue reconciliation engine for OTT clients (Disney+ Hotstar, DStv), scaling to 100K+ ad line items per day with 98% accuracy, supporting over $1M in weekly ad revenue.",
+        " Collaborated with product/data teams to build recommendation systems, optimizing ad inventory and boosting fill rates by 15%.",
+        " Containerized and orchestrated microservices using Docker to resolve scalability bottlenecks, reducing deployment time and failure rates by 20% while improving resource utilization and service uptime.",
+        " Improved data retrieval speed by 17% by implementing caching layers for latency-critical services using Redis and asynchronous messaging via RabbitMQ, enhancing system responsiveness and throughput.",
+        " Developed a serverless, cross-platform notification system using Firebase Cloud Messaging, enabling real-time, cross-platform push notifications (30,000 notification/day) and reducing delivery latency by 2ms/notification.",
+        " Managed AWS EC2, RDS, S3 deployments and optimized AWS Athena queries to support real-time reporting pipelines.",
+        " Mentored 4+ engineers through the SDLC, standardized code quality practices & use of development tools improving team delivery velocity by 10%.",
       ],
     },
     {
@@ -119,10 +119,10 @@ export const Experience = () => {
       stack: ["Django", "Angular", "PostgreSQL", "Rasa", "AWS", "Terraform", "Docker"],
       respSummary: "Full-stack development of B2C platforms with NLP-driven automation.",
       points: [
-        "Improved user engagement by 15% with NLP-driven chatbots.",
-        "Delivered Django–Angular applications improving operational efficiency.",
-        "Introduced Agile Scrum, leading weekly meetups.",
-        "Designed and implemented an OCR-powered resume parser.",
+        " Improved user engagement by 15% through end-to-end development of NLP-driven conversational chatbots for B2C platforms.",
+        " Developed full-stack Django–Angular apps for B2C clients, improving operational efficiency and accelerating revenue growth.",
+        " Introduced Agile Scrum, fostering weekly meetups that boosted knowledge exchange & team productivity.",
+        " Designed and implemented OCR-powered resume parser, automating applicant data extraction and improving recruitment efficiency by 8%.",
       ],
     },
     {
