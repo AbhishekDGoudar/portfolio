@@ -1,7 +1,7 @@
 import React from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 
-// ✅ Import logos from @assets
+// logos
 import utaLogo from "@/assets/logo/University_of_Texas_at_Arlington.png";
 import voiroLogo from "@/assets/logo/voiro_logo.svg";
 import travelderLogo from "@/assets/logo/assystant_logo.svg";
@@ -15,8 +15,8 @@ const ExperienceCard = ({ logo, alt, company, roles, stack, respSummary, points 
   return (
     <div
       className="
-        p-6 rounded-xl border border-black bg-[#f5f5dc] 
-        hover:-translate-y-1 hover:shadow-[0_2px_12px_rgba(0,0,0,0.25)] 
+        p-5 sm:p-6 rounded-xl border border-black bg-[#f5f5dc]
+        hover:-translate-y-1 hover:shadow-[0_2px_12px_rgba(0,0,0,0.25)]
         transition-all text-center
       "
     >
@@ -24,11 +24,11 @@ const ExperienceCard = ({ logo, alt, company, roles, stack, respSummary, points 
       <img
         src={logo}
         alt={alt}
-        className="w-[7em] h-[7em] object-contain mx-auto mb-3"
+        className="w-20 h-20 sm:w-[7em] sm:h-[7em] object-contain mx-auto mb-3"
       />
 
       {/* Company */}
-      <h3 className="text-xl font-bold mb-2 text-gray-900">{company}</h3>
+      <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900">{company}</h3>
 
       {/* Roles */}
       <div className="text-gray-800 text-sm">
@@ -143,14 +143,15 @@ export const Experience = () => {
   return (
     <section
       id="experience"
-      className="min-h-screen flex items-center justify-center py-20 bg-[#f5f5dc]"
+      className="bg-[#f5f5dc] py-16 md:py-20"
     >
       <RevealOnScroll>
-        <div className="max-w-4xl w-full px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Experience
           </h2>
-          <div className="grid grid-cols-1 gap-6">
+
+          <div className="grid grid-cols-1 gap-5 sm:gap-6">
             {experiences.map((exp) => (
               <RevealOnScroll key={exp.company}>
                 <ExperienceCard {...exp} />

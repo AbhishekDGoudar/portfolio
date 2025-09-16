@@ -11,7 +11,8 @@ export const Home = () => {
     return (
         <section
             id="home"
-            className="min-h-screen flex items-center justify-center relative bg-[#f5f5dc]" // beige background
+            className="min-h-screen bg-[#f5f5dc] flex items-center justify-center relative
+             pt-24 md:pt-28 scroll-mt-24"
         >
             <RevealOnScroll>
                 <div className="text-center z-10 px-4 flex flex-col items-center">
@@ -42,16 +43,7 @@ export const Home = () => {
                         </button>
                     </p>
                     <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
-                        Software Engineer with a passion for building scalable, high-impact technology
-                        solutions. My expertise spans software development, system design, performance
-                        optimization, and applied machine learning, where I’ve successfully led
-                        cross-functional teams to deliver innovative products.
-                        <br /><br />
-                        I thrive at the intersection of engineering and collaboration—whether driving
-                        technical execution, mentoring junior engineers, or pushing the boundaries of
-                        what’s possible. With a strong foundation in engineering principles and a
-                        commitment to continuous learning, I aim to contribute to cutting-edge projects
-                        that create measurable impact.
+                        Software Engineer with expertise in software development, system design, optimization, and machine learning. I thrive on solving complex problems, leading cross-functional teams, and delivering high-impact solutions. With a strong engineering foundation and a commitment to continuous growth, I bring energy, collaboration, and innovation to every project.
                         <br /><br />
                         Always open to connecting with professionals who are passionate about technology,
                         innovation, and solving complex challenges.
