@@ -1,0 +1,45 @@
+name: Build and Deploy portfolio
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build and deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      -name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: 'ghp-react-build'
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: 'ghp-react-build'
+          deploy_branch: 'gh-pages'
+          target_branch: 'main'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: 'Deploy React app to GitHub Pages'
